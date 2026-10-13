@@ -302,7 +302,7 @@ export default function Page() {
                           {role.projects.map((proj) => (
                             <div key={proj.name} className="rounded-xl border border-slate-100 bg-slate-50/50 p-4">
                               <p className="text-xs font-semibold text-slate-700 mb-0.5">{proj.name}</p>
-                              {proj.note && (
+                              {"note" in proj && proj.note && (
                                 <p className="text-xs text-slate-400 mb-2 italic">{proj.note}</p>
                               )}
                               <ul className="space-y-1.5">
